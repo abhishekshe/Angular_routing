@@ -10,7 +10,7 @@ const routes: Routes = [
   {path:"about", component:AboutusComponent},
   {path:"contact", component:ContactusComponent},
   {path:"dashboard", component:DashboardComponent},
-  {path:"dashboard/:id", component:DashboardComponent},
+  {path:'dashboard/:id', component:DashboardComponent},
   {path:"**" , component:PagenotfoundComponent}
 ];
 
