@@ -6,9 +6,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'dashboard',pathMatch:'full'},
   {path:"about", component:AboutusComponent},
   {path:"contact", component:ContactusComponent},
   {path:"dashboard", component:DashboardComponent},
+  {path:"dashboard/:id", component:DashboardComponent},
   {path:"**" , component:PagenotfoundComponent}
 ];
 
