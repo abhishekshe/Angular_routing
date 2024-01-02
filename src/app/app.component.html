@@ -1,15 +1,17 @@
 <h1 style="text-align: center; background-color: aqua;">App component</h1>
 
-<router-outlet></router-outlet>
+
     <a routerLink="about">About Us</a> |
     <a routerLink="contact">Contact Us</a> |
     <a routerLink="dashboard">Dashboard</a> |
+    <a routerLink="student">Student</a> |
+    
     <!-- <a [routerLink]="['dashboard',101]">Dashboard</a> | -->
     <!-- <a [routerLink]="['dashboard',101]">Dashboard</a> | -->
    
 
-    <a routerLink=" ">student</a> |
+    <a routerLink=" ">Not found</a> |
 
     
     <button (click)="gotoDashboard()">gotoDashboard()</button>
-  
+    <router-outlet></router-outlet>

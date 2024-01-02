@@ -4,6 +4,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { StudentComponent } from './student/student.component';
+import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
+import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'dashboard',pathMatch:'full'},
@@ -11,6 +14,17 @@ const routes: Routes = [
   {path:"contact", component:ContactusComponent},
   {path:"dashboard", component:DashboardComponent},
   {path:'dashboard/:id', component:DashboardComponent},
+  {path:"student",
+  children:[
+    {path:"",component:StudentComponent},
+    {path:"studentdetails", component:StudentdetailsComponent},
+    {path:"studentregistration", component:StudentregistrationComponent},
+
+
+
+  ]},
+  
+ 
   {path:"**" , component:PagenotfoundComponent}
 ];
 

@@ -7,6 +7,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { StudentComponent } from './student/student.component';
+import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
+import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AboutusComponent,
     ContactusComponent,
     DashboardComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    StudentComponent,
+    StudentdetailsComponent,
+    StudentregistrationComponent
   ],
   imports: [
     BrowserModule,
