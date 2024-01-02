@@ -7,6 +7,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { StudentComponent } from './student/student.component';
 import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
 import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
+import { ParentdetailsComponent } from './parentdetails/parentdetails.component';
+import { ContactdetailsComponent } from './contactdetails/contactdetails.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'dashboard',pathMatch:'full'},
@@ -17,7 +19,13 @@ const routes: Routes = [
   {path:"student",
   children:[
     {path:"",component:StudentComponent},
-    {path:"studentdetails", component:StudentdetailsComponent},
+    {path:"studentdetails",
+  children:[
+    {path:'', component:StudentdetailsComponent},
+    {path:'contactdetails', component:ContactdetailsComponent},
+    {path:'Parentdetails', component:ParentdetailsComponent},
+
+  ]},
     {path:"studentregistration", component:StudentregistrationComponent},
 
 

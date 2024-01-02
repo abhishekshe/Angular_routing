@@ -10,6 +10,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { StudentComponent } from './student/student.component';
 import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
 import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
+import { ParentdetailsComponent } from './parentdetails/parentdetails.component';
+import { ContactdetailsComponent } from './contactdetails/contactdetails.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { StudentregistrationComponent } from './studentregistration/studentregis
     PagenotfoundComponent,
     StudentComponent,
     StudentdetailsComponent,
-    StudentregistrationComponent
+    StudentregistrationComponent,
+    ParentdetailsComponent,
+    ContactdetailsComponent
   ],
   imports: [
     BrowserModule,
